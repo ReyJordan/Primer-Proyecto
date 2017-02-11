@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body{
+	background: url(../img/fondo.png);
+	background-size: cover; /*para q el fondo abarque el tamaño de la pantalla*/
+	background-attachment: fixed; /*para q el fondo se quede estatico en la pantalla*/
+	font-family: 'Pangolin';
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.targeta{
+	background: #fff;
+	margin: 40px 0;
+	border-radius: 5px;
+	overflow: hidden; /*el contenido q este fuera no se vea*/
+	width: 100%;
+	z-index: 1000;
+	text-align: center;
+}
+
+/*------------------------------*/
+/*--------Slider baner----------*/
+/*------------------------------*/
+
+.slider-banner{
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+.slider-banner{
+	position: relative;
+	width: 100%;
+}
+
+.slider-banner .banner img{
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+.slider-banner .flecha-banner{
+	font-size: 35px;
+	line-height: 35px;
+	color: #f76707;
+	position: absolute;
+	top: 50%;
+	z-index: 1100;
+}
+
+ .slider-banner .flecha-banner:hover{
+	color: #d9480f;
+}
+
+.slider-banner .anterior{
+	left: 20px;
+}
+
+.slider-banner .siguiente{
+	right: 20px;
+}
+
+/*------------------------------*/
+/*--------Slider info----------*/
+/*------------------------------*/
+
+.slider-info{
+	position: relative;
+}
+
+.slider-info .informacion{
+	width: 100%;
+}
+
+.slider-info .informacion article{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider-info .informacion article .slider{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	position: absolute;
+	padding: 20px 80px;
+}
+
+.slider-info .flecha-info{
+	font-size: 35px;
+	line-height: 35px;
+	color: #ccc;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+}
+
+.slider-info .flecha-info:hover{
+	color: #999;
+}
+
+.slider-info .flecha-info.anterior{
+	left: 20px;
+}
+
+.slider-info .flecha-info.siguiente{
+	right: 20px;
+}
+
+/* estilo sliders de info */
+
+.slider-info .informacion .nombre{
+	color: #444;
+	font-size: 38px;
+	line-height: 38px;
+	margin-bottom: 16px;
+}
+
+.slider-info .informacion .trbajo{
+	color: #55aced;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px
+}
+
+.slider-info .informacion .bandera{
+	color: #55aced;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.slider-info .informacion .bandera img{
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+	width: 20px;
+}
+
+.slider-info .informacion .subtitulo{
+	color: #444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+.slider-info .informacion .texto{
+	color: #228ae6;
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 16px;
+
+}
+
+/*botones slider info*/
+
+.slider-info .botones span{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background: #e6e6e6;
+}
+
+.slider-info .botones span.active {
+	background: #6ed279;
+}
+
+/*redes sociales*/
+
+.redes-sociales{
+	width: 100%;
+	text-align: cente;
+	padding: 20px 0;
+}
+
+.redes-sociales a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 20px;
+	padding: 14px 0;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+
+.redes-sociales .facebook{
+	background: #3d5998;
+}
+
+.redes-sociales .twiter{
+	background: #55caee;
+}
+
+.redes-sociales .youtube{
+	background: #d42322;
+}
+/*
+font-family: 'Pangolin', cursive;
+font-family: 'Barrio', cursive;
+*/
